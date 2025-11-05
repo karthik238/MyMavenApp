@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mavenapp
+  name: mavenapp
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 8082
+      protocol: TCP
+  selector:
+    app: mavenapp
