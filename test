@@ -1,0 +1,3 @@
+post build actions
+test report xmls - target/surefire-reports/*.xml
+test output -all
