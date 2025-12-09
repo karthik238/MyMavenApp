@@ -1,3 +1,8 @@
 post build actions
 test report xmls - target/surefire-reports/*.xml
 test output -all
+
+java_deploy
+build steps -invoke top level
+execute shell -cd target
+              java -jar *.jar
